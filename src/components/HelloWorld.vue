@@ -8,18 +8,23 @@ defineProps({
 </script>
 
 <template>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jersey+25&display=swap" rel="stylesheet">
+
   <div class="greetings">
     <h1 class="green">{{ msg }}</h1>
     <h3>
-      You’ve successfully created a project with
-      <a href="https://vitejs.dev/" target="_blank" rel="noopener">Vite</a> +
-      <a href="https://vuejs.org/" target="_blank" rel="noopener">Vue 3</a>.
+      <p>Hello, my name is Lucas (aka DevSecCat), Welcome to my laboratory!</p>
+      <p>This is where I post some fun experiments, and some articles about stuff I like.</p>
+      <p>Feel free to reach me out in my social networks.</p>
     </h3>
   </div>
 </template>
 
 <style scoped>
 h1 {
+  font-family: "Jersey 25", sans-serif;
   font-weight: 500;
   font-size: 2.6rem;
   position: relative;
