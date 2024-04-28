@@ -5,25 +5,30 @@ import HelloWorld from './components/HelloWorld.vue'
 
 <template>
   <header>
-    <img alt="Profile Pic" class="logo" src="@/assets/profile.jpg" width="200" height="200" />
+    <img alt="Profile Pic" class="logo" src="@/assets/profile2.png" width="180" height="180" />
     <br>
     <div class="wrapper">
       <HelloWorld msg="DevSecCat's Lab" />
 
       <nav>
         <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
       </nav>
     </div>
   </header>
-
   <RouterView />
 </template>
 
 <style scoped>
 header {
+  display: grid;
+  justify-items: center;
+  align-items: center;
   line-height: 1.5;
   max-height: 100vh;
+  max-width: fit-content;
+  background-color: var(--color-background-soft);
+  border-radius: 15px;
+  padding: 5%;
 }
 
 .logo {
@@ -33,7 +38,7 @@ header {
 }
 
 nav {
-  width: 100%;
+  width: 1%;
   font-size: 12px;
   text-align: center;
   margin-top: 2rem;
@@ -59,9 +64,7 @@ nav a:first-of-type {
 
 @media (min-width: 1024px) {
   header {
-    display: flex;
     place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
   }
 
   .logo {
@@ -69,9 +72,7 @@ nav a:first-of-type {
   }
 
   header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
+    place-items: flex-center;
   }
 
   nav {

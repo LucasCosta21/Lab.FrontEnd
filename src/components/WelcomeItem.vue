@@ -19,9 +19,16 @@
   position: relative;
 }
 
+.details:hover {
+  background: var(--color-background-mute);
+  border-radius: 10px;
+}
+
 .details {
   flex: 1;
   margin-left: 1rem;
+  padding: 2%;
+  transition: 0.4s;
 }
 
 i {
